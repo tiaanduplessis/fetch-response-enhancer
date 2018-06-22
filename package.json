@@ -1,0 +1,45 @@
+{
+  "name": "fetch-response-enhancer",
+  "version": "1.0.0",
+  "description": "A nicer response object",
+  "source": "src/index.js",
+  "main": "dist/fetch-response-enhancer.js",
+  "module": "dist/fetch-response-enhancer.m.js",
+  "browser": "dist/fetch-response-enhancer.umd.js",
+  "repository": "https://github.com/tiaanduplessis",
+  "author": "Tiaan du Plessis",
+  "license": "MIT",
+  "scripts": {
+    "lint": "standard --fix",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "build": "microbundle"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "fetch-headers": "^2.0.0",
+    "jest": "^23.1.0",
+    "microbundle": "^0.4.4",
+    "standard": "^11.0.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "fetch",
+    "response",
+    "enhance"
+  ],
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "standard": {
+    "ignore": "dist",
+    "env": {
+      "browser": true,
+      "jest": true
+    }
+  }
+}
